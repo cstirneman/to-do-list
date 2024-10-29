@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>To-Do Application</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left-side">
+                <div class="to-dos notes">
+                    <h3>To-Do Tasks</h3>
+                    <hr>
+                    <ul id="task-list"></ul>
+                </div>
+
+                <div class="completed notes">
+                    <h3>Completed Tasks</h3>
+                    <hr>
+                    <ul id="completed-task-list"></ul>
+
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="add-note">
+                    <h2>Add a Task</h2>
+                    <div class="note-info">
+                        <h3>Title:</h3>
+                        <input type="text" id="title-input">
+                    </div>
+                    <div class="note-info">
+                        <h3>Time:</h3>
+                        <input type="time" id="time-input">
+                    </div>
+                    <div class="note-info">
+                        <h3>Date:</h3>
+                        <input type="date" id="date-input">
+                    </div>
+                    <div class="note-info">
+                        <h3>Urgency:</h3>
+                        <select name="urgency" id="urgency-input">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div class="button-container">
+                        <button id="create-btn">Create </button>
+                        <button id="clear-btn">Clear</button>
+                        <button id="save-btn" style="display: none;">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

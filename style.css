@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    text-align: center;
+    height:15vh;
+    font-size: 2rem;
+    background-color: skyblue;
+    color: white;
+}
+
+h1{
+    padding-top: 20px;
+}
+
+h2{
+    position: relative;
+    bottom: 5vh;
+    font-size: 2rem;
+    color: rgb(73, 73, 73);
+}
+
+h3{
+    margin-left: 15px;
+}
+
+button{
+    background-color: white;
+    height:30px;
+    width: 75px;
+    border-radius: 10%;
+    border: 2px solid skyblue;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+button:hover{
+    background-color: skyblue;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 85vh;
+}
+
+.left-side{
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: rgb(226, 226, 226);
+    border-right: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side{
+    grid-column: 2;
+    grid-row: 1/3;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+}
+
+.notes{
+    flex: 1;
+    width: 80%;
+    background-color: rgb(240, 236, 236);
+    border-radius: 20px;
+    margin: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    overflow: auto;
+}
+
+.add-note{
+    flex: 1;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    margin: 0px 10vw 0px 10vw;
+    background-color: rgb(209, 237, 247);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+}
+
+.add-note h3{
+    margin-bottom: 20px;
+}
+
+.note-info {
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.note-info h3 {
+    margin: 0;
+    color: rgb(73, 73, 73);
+}
+
+.note-info input, select{
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vw;
+    margin-top: 7vh;
+}
+
+.checkbox{
+    margin-left: 10px;
+}
+
+.new-task{
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.new-task:hover{
+    background-color: rgb(223, 219, 219);
+}
